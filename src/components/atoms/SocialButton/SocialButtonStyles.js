@@ -10,4 +10,5 @@ export const SocialButtonStyles = styled.a`
   margin: 10px;
   background-color: ${({ theme }) => theme.colors.button};
   color: ${({ theme }) => theme.colors.white};
+  cursor: pointer;
 `;

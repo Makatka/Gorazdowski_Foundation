@@ -9,6 +9,8 @@ import gallery3 from '../../../assets/img/senior(134x134)px.jpeg';
 import gallery4 from '../../../assets/img/niezapominajka(134x134)px.jpeg';
 import logo from '../../../assets/img/logo_small.png';
 import SocialButton from '../../atoms/SocialButton/SocialButton';
+import { FaFacebookF } from 'react-icons/fa';
+import { IoIosArrowUp } from 'react-icons/io';
 
 const Footer = () => {
   return (
@@ -68,8 +70,12 @@ const Footer = () => {
             <span>Copyright &copy; Makatka </span>
           </div>
           <div id={'icon-wrapper'}>
-            <SocialButton>f</SocialButton>
-            <SocialButton>UP</SocialButton>
+            <SocialButton>
+              <FaFacebookF />
+            </SocialButton>
+            <SocialButton>
+              <IoIosArrowUp />
+            </SocialButton>
           </div>
         </Wrapper>
       </Container>

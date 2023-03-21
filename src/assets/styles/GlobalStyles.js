@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
   }
   
   *, *::after, *::before {
-    box-sizing: inherit;
+    box-sizing: border-box;
   }
   
   body {
@@ -17,6 +17,12 @@ const GlobalStyles = createGlobalStyle`
   
   a, button {
     font-family: 'Montserrat', sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+    margin-block-end: 0;
+    margin-block-start: 0;
   }
 `;
 
