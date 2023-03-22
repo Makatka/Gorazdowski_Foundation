@@ -20,7 +20,7 @@ const Footer = () => {
           <div>
             <h4>Rozlicz PIT z nami</h4>
             <p>
-              Jeżeli jesteś <span>emerytem</span> lub <span>rencistą</span>
+              Jeżeli jesteś <span>emerytem</span> lub <span>rencistą </span>
               możesz przekazać swój 1.5% podatku wypełniając <span>PI-OP</span>
             </p>
             <p>Jeśli nie wiesz jak przekazać swój 1.5% skontaktuj się z nami</p>
