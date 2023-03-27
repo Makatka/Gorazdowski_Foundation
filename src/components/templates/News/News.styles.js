@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.section`
   margin-top: 100px;
   background-color: #f6f6f6;
-  padding: 80px 0 20px 0;
+  padding: 60px 0 20px 0;
 `;
 
 export const SectionTitleStyles = styled.div`
@@ -12,14 +12,17 @@ export const SectionTitleStyles = styled.div`
 
   h4 {
     font-family: ${({ theme }) => theme.fonts.textFont};
+    color: ${({ theme }) => theme.colors.textDark};
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   h2 {
     font-family: ${({ theme }) => theme.fonts.serifFont};
+    color: ${({ theme }) => theme.colors.textDark};
     font-size: 39px;
     margin-top: -80px;
+    font-weight: 500;
   }
 
   img {
@@ -29,7 +32,7 @@ export const SectionTitleStyles = styled.div`
     top: -75px;
     left: 0;
     opacity: 0.1;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
   }
 `;
 export const ArticlesWrapper = styled.div`

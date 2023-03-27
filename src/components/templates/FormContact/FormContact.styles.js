@@ -14,9 +14,10 @@ export const Wrapper = styled.div`
   textarea {
     width: 100%;
     margin-top: 25px;
-    color: #393939;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
+    color: ${({ theme }) => theme.colors.textDark};
+    padding: 15px;
+    font-family: ${({ theme }) => theme.fonts.textFont};
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
     border: 1px solid #ced4da;
@@ -29,6 +30,14 @@ export const Wrapper = styled.div`
   button {
     background-color: ${({ theme }) => theme.colors.buttonDark};
     margin-top: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: ${({ theme }) => theme.colors.button};
+      border: 1px solid ${({ theme }) => theme.colors.button};
+    }
 
     svg {
       margin-left: 10px;
@@ -49,13 +58,14 @@ export const AddressWrapper = styled.div`
 
   ul {
     margin-top: 40px;
-    padding-inline-start: 0;
+    padding-inline-start: 5px;
 
     li {
       margin-bottom: 30px;
       display: flex;
       align-items: center;
       position: relative;
+     
 
       &:after {
         content: '';

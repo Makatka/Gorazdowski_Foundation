@@ -39,12 +39,24 @@ export const Wrapper = styled.div`
     color: ${({ theme }) => theme.colors.white};
     font-size: 20px;
   }
+
+  li {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
   span {
     color: ${({ theme }) => theme.colors.action};
+    font-weight: bold;
   }
 
   strong {
     font-weight: bold;
+    margin-right: 5px;
   }
 
   button {

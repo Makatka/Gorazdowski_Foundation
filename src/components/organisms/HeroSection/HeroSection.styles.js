@@ -7,6 +7,12 @@ export const Wrapper = styled.div`
   background-image: url(${image});
   background-size: cover;
   margin-bottom: 100px;
+  background-position: center;
+
+  button {
+    background-color: ${({ theme }) => theme.colors.buttonDark};
+    border-color: ${({ theme }) => theme.colors.buttonDark};
+  }
 `;
 
 export const HeroContent = styled.div`

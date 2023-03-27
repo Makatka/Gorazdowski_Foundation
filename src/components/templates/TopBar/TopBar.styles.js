@@ -43,5 +43,14 @@ export const ActionLink = styled.div`
     margin: 0;
     text-transform: uppercase;
     font-size: 14px;
+    transition: all 0.5s ease;
+
+    &:first-of-type {
+      background-color: transparent;
+    }
+    &:hover {
+      background-color: ${({ theme }) => theme.colors.action};
+      color: ${({ theme }) => theme.colors.textDark};
+    }
   }
 `;
