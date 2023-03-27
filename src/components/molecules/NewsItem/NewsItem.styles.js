@@ -9,6 +9,7 @@ export const Card = styled.div`
   background-color: #fff;
   height: 207px;
   margin: 10px 0 20px 0;
+  cursor: pointer;
 
   &:first-of-type {
     display: none;

@@ -37,3 +37,19 @@ export const ArticlesWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
 `;
+
+export const SeeMoreLink = styled.a`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 20px 0;
+  gap: 8px;
+  color: ${({ theme }) => theme.colors.buttonDark};
+  cursor: pointer;
+  transition: 0.5s ease;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;

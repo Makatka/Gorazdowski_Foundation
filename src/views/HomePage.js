@@ -2,7 +2,7 @@ import React from 'react';
 import CardsInfo from 'components/templates/CardsInfo/CardsInfo';
 import SectionInfo from 'components/templates/SectionInfo/SectionInfo';
 import News from 'components/templates/News/News';
-import SectionContact from 'components/templates/SectionContact/SectionContact';
+import FormContact from 'components/templates/FormContact/FormContact';
 
 const HomePage = () => {
   return (
@@ -10,7 +10,7 @@ const HomePage = () => {
       <CardsInfo />
       <SectionInfo />
       <News />
-      <SectionContact />
+      <FormContact />
     </main>
   );
 };

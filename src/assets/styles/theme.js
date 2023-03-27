@@ -8,6 +8,8 @@ export const theme = {
     dark: '#273b5f',
     white: '#f8f9fa',
     textLight: '#83868c',
+    textSemiLight: '#646464',
+    textDark: '#212529',
     backgroundDark: '#191919',
   },
   fonts: {
