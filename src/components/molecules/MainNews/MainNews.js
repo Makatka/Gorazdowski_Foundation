@@ -1,7 +1,7 @@
 import React from 'react';
 import { AiOutlineCalendar } from 'react-icons/ai';
 
-import { ArticleDate, Card, CardText, CardTitle, CardImage } from '../MainNews/MainNews.styles';
+import { ArticleDate, Card, CardText, CardTitle, CardImage } from './MainNews.styles';
 
 const MainNewsStyles = ({ image, title, date }) => {
   return (
@@ -11,7 +11,7 @@ const MainNewsStyles = ({ image, title, date }) => {
         <CardTitle>{title}</CardTitle>
         <ArticleDate>
           <AiOutlineCalendar />
-          {date}
+          <p>{date}</p>
         </ArticleDate>
       </CardText>
     </Card>

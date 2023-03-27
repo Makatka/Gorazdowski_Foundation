@@ -2,6 +2,7 @@ import styled from 'styled-components';
 export const CardText = styled.div`
   position: absolute;
   display: flex;
+  padding: 25px 20px;
   justify-content: space-between;
   flex-direction: column;
   bottom: 0;
@@ -10,7 +11,7 @@ export const CardText = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
   width: 100%;
-  height: 0;
+  height: 30%;
   color: #fff;
   transition: 0.5s ease;
 `;
@@ -37,9 +38,16 @@ export const CardTitle = styled.h4`
   line-height: 1.3;
   color: #fff;
 `;
-export const ArticleDate = styled.small`
+export const ArticleDate = styled.span`
   position: absolute;
+  padding: 25px 20px;
   bottom: 0;
   left: 0;
   color: #fff;
+  display: inline-flex;
+  align-items: center;
+
+  p {
+    margin: 0 0 0 8px;
+  }
 `;

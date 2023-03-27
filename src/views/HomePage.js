@@ -1,7 +1,7 @@
 import React from 'react';
 import CardsInfo from 'components/templates/CardsInfo/CardsInfo';
 import SectionInfo from 'components/templates/SectionInfo/SectionInfo';
-import Articles from 'components/templates/Articles/Articles';
+import News from 'components/templates/News/News';
 import SectionContact from 'components/templates/SectionContact/SectionContact';
 
 const HomePage = () => {
@@ -9,7 +9,7 @@ const HomePage = () => {
     <main>
       <CardsInfo />
       <SectionInfo />
-      <Articles />
+      <News />
       <SectionContact />
     </main>
   );
