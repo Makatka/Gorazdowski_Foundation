@@ -10,4 +10,8 @@ export const theme = {
     textLight: '#83868c',
     backgroundDark: '#191919',
   },
+  fonts: {
+    textFont: "'IBM Plex Sans', sans-serif",
+    serifFont: "'Noto Serif', serif",
+  },
 };
