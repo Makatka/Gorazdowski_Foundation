@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from './Root.styles';
+import { Container } from '../Root.styles';
 import articleImage from 'assets/img/pomnik.webp';
 import oppLogo from 'assets/img/logo_opp/logo_opp_kolor.png';
 import { ArticleWrapper, ArticleText, ArticleSubtitle, ArticleFooter, ReadMoreLink, FlexWrapper, ModalOpen } from './About.styles';

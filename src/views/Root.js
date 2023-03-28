@@ -6,21 +6,24 @@ import GlobalStyle from '../assets/styles/GlobalStyles';
 import TopBar from '../components/templates/TopBar/TopBar';
 import HeroSection from '../components/organisms/HeroSection/HeroSection';
 import HomePage from './HomePage';
-import About from './About';
+import About from './About/About';
+import Patron from './Patron/Patron';
 import Navbar from '../components/organisms/Navbar/Navbar';
 
 function Root() {
+  const home = false;
+  const about = false;
+  const patron = true;
   return (
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <TopBar />
-        {/*
-        <HeroSection />
-        <HomePage />
-        */}
-        <Navbar />
-        <About />
+        {home ? <HeroSection /> : null}
+        {home ? <HomePage /> : null}
+        {home ? null : <Navbar />}
+        {about ? <About /> : null}
+        {patron ? <Patron /> : null}
         <Footer />
       </ThemeProvider>
     </>

@@ -70,6 +70,7 @@ export const ReadMoreLink = styled.a`
   width: 100%;
   display: block;
   margin-bottom: 50px;
+  cursor: pointer;
 `;
 
 export const FlexWrapper = styled.div`
