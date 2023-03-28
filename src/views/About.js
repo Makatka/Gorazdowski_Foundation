@@ -2,9 +2,11 @@ import React from 'react';
 import { Container } from './Root.styles';
 import articleImage from 'assets/img/pomnik.webp';
 import oppLogo from 'assets/img/logo_opp/logo_opp_kolor.png';
-import { ArticleWrapper, ArticleText, ArticleSubtitle, ArticleFooter, ReadMoreLink, FlexWrapper } from './About.styles';
+import { ArticleWrapper, ArticleText, ArticleSubtitle, ArticleFooter, ReadMoreLink, FlexWrapper, ModalOpen } from './About.styles';
 import { FaArrowRight } from 'react-icons/fa';
-import ModalOpen from '../components/molecules/ModalOpen/ModalOpen';
+import { BiBookmark } from 'react-icons/bi';
+import { BsPeople } from 'react-icons/bs';
+import { RiFilePaperLine } from 'react-icons/ri';
 
 const About = () => {
   return (
@@ -41,9 +43,24 @@ const About = () => {
         Wiecej na temat patrona Stowarzyszenia <FaArrowRight />
       </ReadMoreLink>
       <FlexWrapper>
-        <ModalOpen />
-        <ModalOpen />
-        <ModalOpen />
+        <ModalOpen>
+          <BiBookmark />
+          <span>
+            Statut <br /> Stowarzyszenia
+          </span>
+        </ModalOpen>
+        <ModalOpen>
+          <BsPeople />
+          <span>
+            Władze <br /> Stowarzyszenia
+          </span>
+        </ModalOpen>
+        <ModalOpen>
+          <RiFilePaperLine />
+          <span>
+            Sprawozdanie <br /> Finansowe
+          </span>
+        </ModalOpen>
       </FlexWrapper>
     </Container>
   );
