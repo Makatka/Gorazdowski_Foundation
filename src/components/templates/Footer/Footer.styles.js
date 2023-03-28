@@ -93,7 +93,7 @@ export const SmallGallery = styled.div`
   display: grid;
   grid-template-columns: 134px 134px;
   grid-template-rows: 134px 134px;
-  grid-gap: 5px;
+  grid-gap: 10px;
 
   img {
     height: 100%;

@@ -12,6 +12,11 @@ export const Wrapper = styled.div`
   button {
     background-color: ${({ theme }) => theme.colors.buttonDark};
     border-color: ${({ theme }) => theme.colors.buttonDark};
+    margin-top: 30px;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
   }
 `;
 

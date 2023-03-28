@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   width: 100vw;
   padding: 10px 0;
   background-color: ${({ theme }) => theme.colors.dark};
-  color: ${({ theme }) => theme.colors.white};
+
   margin-top: 20px;
   border-radius: 3px;
   box-shadow: 0px 33px 0px -24px rgba(26, 47, 75, 0.5);
@@ -28,12 +28,17 @@ export const Navigation = styled.ul`
 
 export const StyledLink = styled.li`
   margin-right: 30px;
-  cursor: pointer;
-  transition: all 0.15s ease-in-out;
-  position: relative;
+  &,
+  a {
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    position: relative;
+    text-decoration: none;
+    color: ${({ theme }) => theme.colors.white};
 
-  &:hover {
-    color: ${({ theme }) => theme.colors.action};
+    &:hover {
+      color: ${({ theme }) => theme.colors.action};
+    }
   }
 
   &:last-of-type {

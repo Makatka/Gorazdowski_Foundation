@@ -12,7 +12,7 @@ export const CardText = styled.div`
   width: 100%;
   height: 0;
   color: #fff;
-  transition: 0.5s ease;
+  transition: 0.5s ease-in-out;
 `;
 export const Card = styled.div`
   position: relative;

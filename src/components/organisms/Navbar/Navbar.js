@@ -11,7 +11,9 @@ const Navbar = () => {
         <Navigation>
           <StyledLink to="/about">O nas</StyledLink>
           <StyledLink to="/article">Aktualności</StyledLink>
-          <StyledLink to="/contact">Kontakt</StyledLink>
+          <StyledLink>
+            <a href="#contact">Kontakt</a>
+          </StyledLink>
         </Navigation>
       </Container>
     </Wrapper>

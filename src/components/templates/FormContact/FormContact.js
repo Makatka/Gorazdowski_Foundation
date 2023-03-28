@@ -1,15 +1,15 @@
 import React from 'react';
 import { Container } from 'views/Root.styles';
 import { Wrapper, AddressWrapper, StyledHeader } from './FormContact.styles';
-import FormField from '../../molecules/FormField/FormField';
+import FormField from 'components/molecules/FormField/FormField';
 import { FiMapPin, FiPhoneCall, FiMail } from 'react-icons/fi';
-import Button from '../../atoms/Button/Button';
+import Button from 'components/atoms/Button/Button';
 import { BsArrowRight } from 'react-icons/bs';
 import { FlexWrapper } from '../SectionInfo/SectionInfo.styles';
 
 const FormContact = () => {
   return (
-    <Container>
+    <Container id={'contact'}>
       <Wrapper>
         <form>
           <StyledHeader>Zostaw Wiadomość</StyledHeader>

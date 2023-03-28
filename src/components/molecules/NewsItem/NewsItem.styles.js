@@ -10,6 +10,7 @@ export const Card = styled.div`
   height: 207px;
   margin: 10px 0 20px 0;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 
   &:first-of-type {
     display: none;
