@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import MainNews from 'components/molecules/MainNews/MainNews';
 import articles from 'assets/articles/articles.js';
 import NewsItem from 'components/molecules/NewsItem/NewsItem';
-import { Wrapper, SectionTitleStyles, ArticlesWrapper, SeeMoreLink } from './News.styles';
+import { Wrapper, SectionTitleStyles, ArticlesWrapper, SeeMoreLink } from './NewsSection.styles';
 import stemp from 'assets/img/two-hands-heart-min.png';
 import shortid from 'shortid';
 import { Container } from '../../../views/Root.styles';
 import { BsArrowRight } from 'react-icons/bs';
 
-const News = () => {
+const NewsSection = () => {
   const [mainArticles, setMainArticles] = useState([]);
 
   useEffect(() => {
@@ -44,4 +44,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default NewsSection;

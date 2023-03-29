@@ -9,11 +9,13 @@ import HomePage from './HomePage';
 import About from './About/About';
 import Patron from './Patron/Patron';
 import Navbar from '../components/organisms/Navbar/Navbar';
+import News from './News/News';
 
 function Root() {
   const home = false;
   const about = false;
-  const patron = true;
+  const patron = false;
+  const news = true;
   return (
     <>
       <ThemeProvider theme={theme}>
@@ -24,6 +26,7 @@ function Root() {
         {home ? null : <Navbar />}
         {about ? <About /> : null}
         {patron ? <Patron /> : null}
+        {news ? <News /> : null}
         <Footer />
       </ThemeProvider>
     </>

@@ -9,32 +9,33 @@ const articles = [
     title: 'Walne Zebranie Członków Stowarzyszenia',
     date: 'Sanok, 28 stycznia 2023r.',
     image: walne2023,
+    subtitle: 'Opis artykułu klinkin po wiecej pisze pisze i co teraz trzeba wymyslec kilka słów więcej zey sprawdzić trochę dłuższy opis.',
   },
   {
     title: 'Serdeczne Życzenia z okazji Świąt Bożego Narodzenia',
     date: 'Sanok, Nowosielce 23 grudnia 2022r.',
     image: zyczenia2022,
+    subtitle: 'Opis artykułu klinkin po wiecej pisze pisze i co teraz trzeba wymyslec kilka słów więcej zey sprawdzić trochę dłuższy opis.',
   },
   {
     title: 'To jest tytuł artykułu 3',
     date: ' Sanok, Nowosielce 1 listopada 2022',
     image: kwesta2022,
-    shortDescribe: ' Troche tekstu Lorem ipsum',
-    articleText: 'Troche tekstu Lorem ipsum, Troche tekstu Lorem simply dummy text of the printing and typesetting industry. Lorem Ipsum',
+    subtitle:
+      'klinkin po wiecej pisze pisze i co teraz trzeba wymyslec kilka słów więc klinkin po wiecej pisze pisze i co teraz trzeba wymyslec kilka słów więc klinkin po wiecej pisze pisze i co teraz trzeba wymyslec kilka słów więc klinkin po wiecej pisze pisze i co teraz trzeba wymyslec kilka słów więcOpis artykułu klinkin po wiecej pisze pisze i co teraz trzeba wymyslec kilka słów więcej  pisze i co teraz trzeba wymyslec kilka słów więcej  pisze i co teraz trzeba wymyslec kilka słów więcej  pisze i co teraz trzeba wymyslec kilka słów więcej  zey sprawdzić trochę dłuższy opis.',
   },
   {
     title: 'To jest tytuł artykułu 4',
     date: '01.01.2023r.',
     image: image4,
-    shortDescribe: ' Troche tekstu Lorem ipsum',
-    articleText: 'Troche tekstu Lorem ipsum, Troche tekstu Lorem simply dummy text of the printing and typesetting industry. Lorem Ipsum',
+    subtitle: 'Opis artykułu klinkin po wiecej pisze pisze i co teraz trzeba wymyslec kilka słów więcej zey sprawdzić trochę dłuższy opis.',
   },
   {
     title: 'To jest tytuł artykułu 5',
     date: '01.01.2023r.',
     image: image5,
-    shortDescribe: ' Troche tekstu Lorem ipsum',
-    articleText: 'Troche tekstu Lorem ipsum, Troche tekstu Lorem simply dummy text of the printing and typesetting industry. Lorem Ipsum',
+    subtitle:
+      'Opis artykułu klinkin po wiecej pisze pisze i co teraz trzeba wymyslec kilka słów więcej zey sprawdzić trochę dłuższy opis. Opis artykułu klinkin po wiecej pisze pisze i co teraz trzeba wymyslec kilka słów więcej zey sprawdzić trochę dłuższy opis.',
   },
 ];
 

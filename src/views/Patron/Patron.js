@@ -1,8 +1,7 @@
 import { ReadMoreLink, ArticleText } from '../About/About.styles';
 import { ArticleWrapper } from './Patron.styles';
-import { BsArrowDown, BsArrowUp } from 'react-icons/bs';
 import { Container } from '../Root.styles';
-import Calendary from 'components/organisms/Calendary/Calendary';
+import Calendar from 'components/organisms/Calendar/Calendar';
 import origin from 'assets/img/gorazdowski_dziecinstwo.jpg';
 import creation from 'assets/img/katechizm.jpg';
 import rest from 'assets/img/gorazdowski_nagrobek.jpg';
@@ -76,7 +75,7 @@ const PatronStyles = () => {
         </ArticleText>
         <img src={rest} alt="Nagrobek Z.Gorazdowskiego" />
       </ArticleWrapper>
-      {readMore ? <Calendary /> : null}
+      {readMore ? <Calendar /> : null}
       {readMore ? <ReadMoreLink onClick={handleMore}>Zwiń kalendarium</ReadMoreLink> : <ReadMoreLink onClick={handleMore}>Rozwiń kalendarium</ReadMoreLink>}
     </Container>
   );

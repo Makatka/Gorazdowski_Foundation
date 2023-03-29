@@ -18,6 +18,7 @@ export const ContactWrapper = styled.ul`
   li {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-right: 20px;
     font-size: 14px;
 

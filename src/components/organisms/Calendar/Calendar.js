@@ -9,7 +9,7 @@ const CalendaryStyles = styled.ul`
     line-height: 29px;
   }
 `;
-const Calendary = () => {
+const Calendar = () => {
   return (
     <CalendaryStyles>
       <li>
@@ -275,4 +275,4 @@ const Calendary = () => {
   );
 };
 
-export default Calendary;
+export default Calendar;

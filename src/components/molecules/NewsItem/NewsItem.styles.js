@@ -30,6 +30,16 @@ export const CardText = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+
+  & > p {
+    line-height: 1.6;
+    color: #646464;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex-grow: 1;
+  }
 `;
 export const CardTitle = styled.h4`
   color: #393939;
