@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'assets/styles/theme';
 import Footer from 'components/templates/Footer/Footer';
@@ -10,17 +10,21 @@ import About from './About/About';
 import Patron from './Patron/Patron';
 import Navbar from '../components/organisms/Navbar/Navbar';
 import News from './News/News';
+import Modal from 'components/organisms/Modal/Modal';
+import Button from '../components/atoms/Button/Button';
 
 function Root() {
   const home = false;
-  const about = false;
+  const about = true;
   const patron = false;
-  const news = true;
+  const news = false;
+
   return (
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <TopBar />
+
         {home ? <HeroSection /> : null}
         {home ? <HomePage /> : null}
         {home ? null : <Navbar />}

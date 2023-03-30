@@ -87,7 +87,7 @@ export const FlexWrapper = styled.div`
   }
 `;
 
-export const ModalOpen = styled.div`
+export const ModalOpen = styled.button`
   position: relative;
   display: flex;
   align-content: center;

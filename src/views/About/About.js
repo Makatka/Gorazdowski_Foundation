@@ -7,10 +7,20 @@ import { FaArrowRight } from 'react-icons/fa';
 import { BiBookmark } from 'react-icons/bi';
 import { BsPeople } from 'react-icons/bs';
 import { RiFilePaperLine } from 'react-icons/ri';
+import Modal from 'components/organisms/Modal/Modal';
+import Button from 'components/atoms/Button/Button';
+import useModal from 'components/organisms/Modal/useModal';
 
 const About = () => {
+  const { isOpen, handleOpenModal, handleCloseModal } = useModal();
+  const handleOpenModalDetails = (e) => {
+    console.log(e.target);
+  };
+
   return (
     <Container>
+      {isOpen ? <Modal handleClose={handleCloseModal} /> : null}
+      <Button onClick={handleOpenModal}>OTWÓRZ MODAL </Button>
       <ArticleWrapper>
         <img src={articleImage} alt="Pomnik Z. Gorazdowski w Sanoku" />
         <ArticleText>
@@ -43,19 +53,19 @@ const About = () => {
         Wiecej na temat patrona Stowarzyszenia <FaArrowRight />
       </ReadMoreLink>
       <FlexWrapper>
-        <ModalOpen>
+        <ModalOpen id="status" onClickCapture={handleOpenModalDetails}>
           <BiBookmark />
           <span>
             Statut <br /> Stowarzyszenia
           </span>
         </ModalOpen>
-        <ModalOpen>
+        <ModalOpen id="authority" onClick={handleOpenModalDetails}>
           <BsPeople />
           <span>
             Władze <br /> Stowarzyszenia
           </span>
         </ModalOpen>
-        <ModalOpen>
+        <ModalOpen id="financialReport" onClick={handleOpenModalDetails}>
           <RiFilePaperLine />
           <span>
             Sprawozdanie <br /> Finansowe
