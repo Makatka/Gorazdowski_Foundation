@@ -19,7 +19,15 @@ const About = () => {
 
   return (
     <Container>
-      {isOpen ? <Modal handleClose={handleCloseModal} /> : null}
+      <Modal handleClose={handleCloseModal} isOpen={isOpen}>
+        <p>
+          a Wojtuszewska, Elżbieta Kędra, Andrzej Kędra, Alina Pęcak, Andrzej Pęcak i Teresa Węgrzyn. Grupa ta postanowiła przygotować: zebranie założycielskie, projekt statutu oraz projekty
+          potrzebnych uchwał. Na zebraniu założycielskim po przedstawieniu celu, założeń działalności oraz sylwetki i działalności charytatywnej św.księdza Zygmunta Gorazdowskiego,projektu statutu
+          wybrano: Zarząd Główny, Główną Komisję Rewizyjną,Sąd Koleżeński oraz trzy osobowy Komitet Założycielski w skład, którego weszli: Andrzej Kędra, Agnieszka Drozd,Alina Pęcak.Zadaniem tego
+          komitetu było przygotowanie niezbędnych dokumentów do zarejestrowania Stowarzyszenia w Rejonowym Sądzie Rejestrowym – krajowego Rejestru w Rzeszowie.
+        </p>
+      </Modal>
+
       <Button onClick={handleOpenModal}>OTWÓRZ MODAL </Button>
       <ArticleWrapper>
         <img src={articleImage} alt="Pomnik Z. Gorazdowski w Sanoku" />

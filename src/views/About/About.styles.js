@@ -31,19 +31,9 @@ export const ArticleText = styled.div`
     color: ${({ theme }) => theme.colors.button};
     font-weight: 400;
     display: block;
-    position: relative;
     margin: 2px 0 0 0;
     padding-left: 5px;
-
-    &:before {
-      content: '';
-      height: 20px;
-      width: 1.5px;
-      background-color: ${({ theme }) => theme.colors.button};
-      position: absolute;
-      top: -2px;
-      left: -3px;
-    }
+    border-left: 2px solid ${({ theme }) => theme.colors.button};
   }
 `;
 export const ArticleSubtitle = styled.div`
