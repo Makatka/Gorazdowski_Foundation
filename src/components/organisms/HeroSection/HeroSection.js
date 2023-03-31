@@ -15,7 +15,6 @@ const HeroSection = () => {
         <PercentModal />
       </Modal>
       <HeroContent>
-        <Navbar />
         <Container>
           <HeroText>
             <h1>

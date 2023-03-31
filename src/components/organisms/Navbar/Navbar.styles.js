@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const Wrapper = styled.div`
   width: 100vw;
@@ -24,24 +25,28 @@ export const Logo = styled.img`
 export const Navigation = styled.ul`
   display: inline-flex;
   text-transform: uppercase;
-`;
 
-export const StyledLink = styled.li`
-  margin-right: 30px;
-  &,
-  a {
-    cursor: pointer;
-    transition: all 0.15s ease-in-out;
-    position: relative;
-    text-decoration: none;
-    color: ${({ theme }) => theme.colors.white};
+  li {
+    margin-right: 30px;
+    &,
+    a {
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+      position: relative;
+      text-decoration: none;
+      color: ${({ theme }) => theme.colors.white};
 
-    &:hover {
-      color: ${({ theme }) => theme.colors.action};
+      &.active {
+        color: ${({ theme }) => theme.colors.action};
+        border-bottom: 1px solid ${({ theme }) => theme.colors.action};
+      }
+      &:hover {
+        color: ${({ theme }) => theme.colors.action};
+      }
     }
-  }
 
-  &:last-of-type {
-    margin-right: 0;
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 `;

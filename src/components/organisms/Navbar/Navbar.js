@@ -1,19 +1,31 @@
 import React from 'react';
-import { Container } from '../../../views/Root.styles';
+import { Container } from 'views/Root.styles';
 import { StyledLink, Logo, Wrapper, Navigation } from './Navbar.styles';
-import logo from '../../../assets/img/logo_small.png';
+import logo from 'assets/img/logo_small.png';
+import { NavLink } from 'react-router-dom';
+import { FaHome } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
     <Wrapper>
       <Container>
-        <Logo src={logo} />
+        <NavLink to="/">
+          <Logo src={logo} />
+        </NavLink>
+
         <Navigation>
-          <StyledLink to="/about">O nas</StyledLink>
-          <StyledLink to="/article">Aktualności</StyledLink>
-          <StyledLink>
-            <a href="#contact">Kontakt</a>
-          </StyledLink>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">O nas</NavLink>
+          </li>
+          <li>
+            <NavLink to="/news">Aktualności</NavLink>
+          </li>
+          <li>
+            <NavLink to="/circles">Koła</NavLink>
+          </li>
         </Navigation>
       </Container>
     </Wrapper>
