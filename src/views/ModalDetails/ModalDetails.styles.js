@@ -35,4 +35,11 @@ export const ModalDetailsWrapper = styled.article`
     color: ${({ theme }) => theme.colors.textDark};
     font-weight: 500;
   }
+
+  & > figure {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 `;

@@ -8,7 +8,6 @@ import { BiBookmark } from 'react-icons/bi';
 import { BsPeople } from 'react-icons/bs';
 import { RiFilePaperLine } from 'react-icons/ri';
 import Modal from 'components/organisms/Modal/Modal';
-import Button from 'components/atoms/Button/Button';
 import useModal from 'components/organisms/Modal/useModal';
 import Status from 'views/ModalDetails/Status';
 import Authority from 'views/ModalDetails/Authority';
@@ -45,8 +44,6 @@ const About = () => {
         {modalAuthority ? <Authority /> : null}
         {modalReport ? <FinancialReport /> : null}
       </Modal>
-
-      <Button onClick={handleOpenModal}>OTWÓRZ MODAL </Button>
       <ArticleWrapper>
         <img src={articleImage} alt="Pomnik Z. Gorazdowski w Sanoku" />
         <ArticleText>

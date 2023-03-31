@@ -10,14 +10,14 @@ import About from './About/About';
 import Patron from './Patron/Patron';
 import Navbar from '../components/organisms/Navbar/Navbar';
 import News from './News/News';
-import Modal from 'components/organisms/Modal/Modal';
-import Button from '../components/atoms/Button/Button';
+import SeniorClub from './SeniorClub/SeniorClub';
 
 function Root() {
   const home = false;
-  const about = true;
+  const about = false;
   const patron = false;
   const news = false;
+  const senior = true;
 
   return (
     <>
@@ -31,6 +31,7 @@ function Root() {
         {about ? <About /> : null}
         {patron ? <Patron /> : null}
         {news ? <News /> : null}
+        {senior ? <SeniorClub /> : null}
         <Footer />
       </ThemeProvider>
     </>
