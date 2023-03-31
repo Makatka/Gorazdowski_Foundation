@@ -4,6 +4,8 @@ export const Wrapper = styled.div`
   width: 100vw;
   background-color: ${({ theme }) => theme.colors.dark};
   color: ${({ theme }) => theme.colors.white};
+  z-index: 10;
+  position: relative;
 
   & > div {
     display: flex;

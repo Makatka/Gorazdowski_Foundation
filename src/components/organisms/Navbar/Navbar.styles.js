@@ -5,8 +5,9 @@ export const Wrapper = styled.div`
   width: 100vw;
   padding: 10px 0;
   background-color: ${({ theme }) => theme.colors.dark};
-
-  margin-top: 20px;
+  z-index: 10;
+  position: relative;
+  margin-top: 10px;
   border-radius: 3px;
   box-shadow: 0px 33px 0px -24px rgba(26, 47, 75, 0.5);
   margin-bottom: 50px;

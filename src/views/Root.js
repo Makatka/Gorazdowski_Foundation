@@ -10,6 +10,7 @@ import Patron from './Patron/Patron';
 import Navbar from 'components/organisms/Navbar/Navbar';
 import News from './News/News';
 import SeniorClub from './SeniorClub/SeniorClub';
+import NotFound from 'views/NotFound/NotFound';
 import Circles from './Circles/Circles';
 
 function Root() {
@@ -17,6 +18,7 @@ function Root() {
     <>
       <GlobalStyle />
       <TopBar />
+
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />

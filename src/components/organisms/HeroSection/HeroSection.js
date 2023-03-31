@@ -1,11 +1,10 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
-import Button from '../../atoms/Button/Button';
+import Button from 'components/atoms/Button/Button';
 import { Wrapper, HeroText, HeroContent } from './HeroSection.styles';
-import { Container } from '../../../views/Root.styles';
+import { Container } from 'views/Root.styles';
 import useModal from 'components/organisms/Modal/useModal';
 import Modal from '../Modal/Modal';
-import PercentModal from '../../../views/ModalDetails/PercentModal';
+import PercentModal from 'views/ModalDetails/PercentModal';
 
 const HeroSection = () => {
   const { isOpen, handleOpenModal, handleCloseModal } = useModal();

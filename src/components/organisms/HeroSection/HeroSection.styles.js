@@ -8,6 +8,8 @@ export const Wrapper = styled.div`
   background-size: cover;
   margin-bottom: 100px;
   background-position: center;
+  position: relative;
+  margin-top: -154px;
 
   button {
     background-color: ${({ theme }) => theme.colors.buttonDark};
@@ -25,6 +27,7 @@ export const HeroContent = styled.div`
   flex-direction: column;
   background: linear-gradient(rgba(135, 198, 155, 0.51), rgba(47, 136, 134, 0.51));
   height: 100%;
+  padding-top: 154px;
 `;
 export const HeroText = styled.div`
   text-align: center;
