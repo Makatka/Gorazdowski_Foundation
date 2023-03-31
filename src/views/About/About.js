@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container } from '../Root.styles';
 import articleImage from 'assets/img/pomnik.webp';
 import oppLogo from 'assets/img/logo_opp/logo_opp_kolor.png';
@@ -10,22 +10,40 @@ import { RiFilePaperLine } from 'react-icons/ri';
 import Modal from 'components/organisms/Modal/Modal';
 import Button from 'components/atoms/Button/Button';
 import useModal from 'components/organisms/Modal/useModal';
+import Status from 'views/ModalDetails/Status';
+import Authority from 'views/ModalDetails/Authority';
+import FinancialReport from 'views/ModalDetails/FinancialReport';
 
 const About = () => {
   const { isOpen, handleOpenModal, handleCloseModal } = useModal();
-  const handleOpenModalDetails = (e) => {
-    console.log(e.target);
+  const [modalStatus, setModalStatus] = useState(false);
+  const [modalAuthority, setModalAuthority] = useState(false);
+  const [modalReport, setModalReport] = useState(false);
+  const handleOpenStatus = () => {
+    setModalStatus(true);
+    setModalAuthority(false);
+    setModalReport(false);
+    handleOpenModal();
+  };
+  const handleOpenAuthority = () => {
+    setModalStatus(false);
+    setModalAuthority(true);
+    setModalReport(false);
+    handleOpenModal();
+  };
+  const handleOpenFinancialRaport = () => {
+    setModalStatus(false);
+    setModalAuthority(false);
+    setModalReport(true);
+    handleOpenModal();
   };
 
   return (
     <Container>
       <Modal handleClose={handleCloseModal} isOpen={isOpen}>
-        <p>
-          a Wojtuszewska, Elżbieta Kędra, Andrzej Kędra, Alina Pęcak, Andrzej Pęcak i Teresa Węgrzyn. Grupa ta postanowiła przygotować: zebranie założycielskie, projekt statutu oraz projekty
-          potrzebnych uchwał. Na zebraniu założycielskim po przedstawieniu celu, założeń działalności oraz sylwetki i działalności charytatywnej św.księdza Zygmunta Gorazdowskiego,projektu statutu
-          wybrano: Zarząd Główny, Główną Komisję Rewizyjną,Sąd Koleżeński oraz trzy osobowy Komitet Założycielski w skład, którego weszli: Andrzej Kędra, Agnieszka Drozd,Alina Pęcak.Zadaniem tego
-          komitetu było przygotowanie niezbędnych dokumentów do zarejestrowania Stowarzyszenia w Rejonowym Sądzie Rejestrowym – krajowego Rejestru w Rzeszowie.
-        </p>
+        {modalStatus ? <Status /> : null}
+        {modalAuthority ? <Authority /> : null}
+        {modalReport ? <FinancialReport /> : null}
       </Modal>
 
       <Button onClick={handleOpenModal}>OTWÓRZ MODAL </Button>
@@ -61,19 +79,19 @@ const About = () => {
         Wiecej na temat patrona Stowarzyszenia <FaArrowRight />
       </ReadMoreLink>
       <FlexWrapper>
-        <ModalOpen id="status" onClickCapture={handleOpenModalDetails}>
+        <ModalOpen id="status" onClickCapture={handleOpenStatus}>
           <BiBookmark />
           <span>
             Statut <br /> Stowarzyszenia
           </span>
         </ModalOpen>
-        <ModalOpen id="authority" onClick={handleOpenModalDetails}>
+        <ModalOpen id="authority" onClick={handleOpenAuthority}>
           <BsPeople />
           <span>
             Władze <br /> Stowarzyszenia
           </span>
         </ModalOpen>
-        <ModalOpen id="financialReport" onClick={handleOpenModalDetails}>
+        <ModalOpen id="financialReport" onClick={handleOpenFinancialRaport}>
           <RiFilePaperLine />
           <span>
             Sprawozdanie <br /> Finansowe
