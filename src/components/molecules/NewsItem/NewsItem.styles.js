@@ -18,7 +18,7 @@ export const Card = styled.div`
 
   &:hover {
     box-shadow: 0 10px 20px 0 rgba(0, 41, 124, 0.1);
-    scale: 1.01;
+    scale: 1.002;
   }
 `;
 export const CardImage = styled.img`
@@ -32,29 +32,15 @@ export const CardText = styled.div`
   display: flex;
   flex-direction: column;
   width: 65%;
-
-  & > p {
-    line-height: 1.6;
-    color: #646464;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    flex-grow: 1;
-  }
+  justify-content: space-between;
 `;
 export const CardTitle = styled.h4`
   color: #393939;
   font-size: 25px;
   font-family: 'Noto Serif', serif;
   line-height: 1.3;
-  flex-grow: 1;
-  margin: 0 0 14px 0;
+  margin: 0 0 0 0;
   font-weight: 400;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
 
   &:hover {
     color: black;
@@ -68,8 +54,39 @@ export const ArticleDate = styled.div`
   width: 100%;
   align-items: center;
   justify-content: start;
+
   span {
-    margin: 0 8px;
+    margin: 0 3px;
     font-size: 14px;
+  }
+  & > span {
+    margin-left: auto;
+    color: ${({ theme }) => theme.colors.button};
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+`;
+export const Content = styled.div`
+  height: 100%;
+  margin: 0;
+
+  overflow: hidden;
+  p {
+    display: none;
+    margin-block-start: 10px;
+    margin-block-end: 0;
+
+    &:first-of-type {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #646464;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
   }
 `;
