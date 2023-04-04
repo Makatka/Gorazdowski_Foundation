@@ -2,16 +2,19 @@ import React from 'react';
 import { AiOutlineCalendar } from 'react-icons/ai';
 import { Card, CardText, ArticleDate, CardTitle, CardImage } from './NewsItem.styles';
 
-const NewsItem = ({ image, title, subtitle = null, date }) => {
+const NewsItem = ({ miniature, localisation, date, title, content }) => {
+  debugger;
+  console.log(content.value.document.children);
   return (
     <Card>
-      <CardImage src={image} alt={title} />
+      <CardImage src={miniature.url} alt={miniature.alt} />
       <CardText>
         <CardTitle>{title}</CardTitle>
-        <p>{subtitle}</p>
+
         <ArticleDate>
           <AiOutlineCalendar />
-          <p>{date}</p>
+          <span>{localisation}</span>
+          <span>{date}</span>
         </ArticleDate>
       </CardText>
     </Card>

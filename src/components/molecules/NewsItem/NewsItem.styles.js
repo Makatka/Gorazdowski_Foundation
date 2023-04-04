@@ -18,6 +18,7 @@ export const Card = styled.div`
 
   &:hover {
     box-shadow: 0 10px 20px 0 rgba(0, 41, 124, 0.1);
+    scale: 1.01;
   }
 `;
 export const CardImage = styled.img`
@@ -30,6 +31,7 @@ export const CardText = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+  width: 65%;
 
   & > p {
     line-height: 1.6;
@@ -46,17 +48,27 @@ export const CardTitle = styled.h4`
   font-size: 25px;
   font-family: 'Noto Serif', serif;
   line-height: 1.3;
-  margin: 0;
   flex-grow: 1;
+  margin: 0 0 14px 0;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+
+  &:hover {
+    color: black;
+  }
 `;
 export const ArticleDate = styled.div`
-  color: #646464;
+  color: ${({ theme }) => theme.colors.textLight};
   display: flex;
   bottom: 0;
   right: 0;
   width: 100%;
   align-items: center;
-  p {
+  justify-content: start;
+  span {
     margin: 0 8px;
     font-size: 14px;
   }
